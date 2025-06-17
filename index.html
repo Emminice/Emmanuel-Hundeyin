@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lorem Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 bg-gray-800 shadow-lg z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <div class="text-2xl font-bold">Lorem</div>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#home" class="hover:text-teal-400">Home</a></li>
+          <li><a href="#about" class="hover:text-teal-400">About</a></li>
+          <li><a href="#projects" class="hover:text-teal-400">Projects</a></li>
+          <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-4">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Lorem Ipsum</h1>
+    <p class="text-lg md:text-xl max-w-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+    <button class="mt-6 bg-teal-500 hover:bg-teal-600 px-6 py-2 rounded-full">Get Started</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-800">
+    <div class="container mx-auto text-center px-4">
+      <h2 class="text-3xl font-bold mb-6">About Lorem</h2>
+      <p class="max-w-3xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at lacus ac velit ornare lobortis. Praesent blandit laoreet nibh. Fusce convallis metus id felis luctus adipiscing.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20">
+    <div class="container mx-auto text-center px-4">
+      <h2 class="text-3xl font-bold mb-10">Lorem Projects</h2>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-gray-700 rounded-lg p-4">
+          <div class="h-40 bg-gray-600 mb-4 rounded"></div>
+          <h3 class="font-bold mb-2">Project One</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="bg-gray-700 rounded-lg p-4">
+          <div class="h-40 bg-gray-600 mb-4 rounded"></div>
+          <h3 class="font-bold mb-2">Project Two</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="bg-gray-700 rounded-lg p-4">
+          <div class="h-40 bg-gray-600 mb-4 rounded"></div>
+          <h3 class="font-bold mb-2">Project Three</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-800">
+    <div class="container mx-auto text-center px-4">
+      <h2 class="text-3xl font-bold mb-6">Contact Lorem</h2>
+      <form class="max-w-lg mx-auto space-y-4">
+        <input type="text" placeholder="Name" class="w-full p-3 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-teal-500">
+        <input type="email" placeholder="Email" class="w-full p-3 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-teal-500">
+        <textarea placeholder="Message" class="w-full p-3 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
+        <button type="submit" class="bg-teal-500 hover:bg-teal-600 px-6 py-2 rounded-full">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-gray-900 text-center text-gray-400">
+    &copy; 2025 Lorem Portfolio. All rights reserved.
+  </footer>
+
+  <!-- Simple Scroll Animation -->
+  <script>
+    const links = document.querySelectorAll('nav a');
+    links.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
